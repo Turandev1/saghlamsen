@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SağlamSən</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      transition: 0.3s all ease-in-out;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.1);
+      border-radius: 40px;
+    }
+
+    .hover-scale {
+      transition: 0.3s ease-in-out;
+    }
+
+    .nav-item a {
+      font-weight: bold;
+    }
+
+
+
+
+
+
+
+
+
+    /* ... mevcut stillerin ... */
+
+    .dropdown-menu {
+      opacity: 0;
+      transform: translateY(10px);
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .dropdown.show .dropdown-menu {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+    }
+  </style>
+
+  </style>
+</head>
+
+<body>
+  <!-- header start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 1.5px solid black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(19, 3, 164);
+          ">
+        SağlamSənsen
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" style="border-bottom: 2px solid rgb(255, 20, 20)" aria-current="page"
+              href="index.html">Əsas Səhifə</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              SağlamOL
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="
+                  border-radius: 24px;
+                  background-color: bisque;
+                  box-shadow: 0px 0px 4px 2px black;
+                ">
+              <li><a class="dropdown-item" href="saglamliq/immunguclen.html">Güclü İmmunitet</a></li>
+              <li><a class="dropdown-item" href="saglamliq/saglamqal.html">Sağlam Qalmaq</a></li>
+              <li><a class="dropdown-item" href="saglamliq/xestelikprofilaktika.html">Xəstəliklərə qarşı tədbirlər</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              İdman
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1" style="
+                  border-radius: 24px;
+                  background-color: bisque;
+                  box-shadow: 0px 0px 4px 2px black;
+                ">
+              <li><a class="dropdown-item" href="ariqla/yaghyandir.html">Yağ Yandırmaq</a></li>
+              <li><a class="dropdown-item" href="idman/ezelequr.html">Əzələ inkişafı</a></li>
+              <li><a class="dropdown-item" href="idman/gucmesq.html">Güc Məşqləri</a></li>
+              <li>
+                <a class="dropdown-item" href="idman/kondisiya.html">Kondisiya Məşqləri</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Arıqla
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2" style="
+                  border-radius: 24px;
+                  background-color: bisque;
+                  box-shadow: 0px 0px 4px 2px black;
+                ">
+              <li>
+                <a class="dropdown-item" href="ariqla/duzgunarqlammeth.html">Düzgün arıqlama metodları</a>
+              </li>
+              <li><a class="dropdown-item" href="ariqla/diyetler.html">Diyetlər</a></li>
+              <li>
+                <a class="dropdown-item" href="ariqla/ariqlamaginmex.html">Arıqlamağın mexanizmi</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Kalkulyatorlar
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3" style="
+                  border-radius: 24px;
+                  background-color: bisque;
+                  box-shadow: 0px 0px 4px 2px black;
+                ">
+              <li>
+                <a class="dropdown-item" href="kalkulyator/kaloriehtiyaci.html">Günlük kalori ehtiyacı</a>
+              </li>
+              <li><a class="dropdown-item" href="kalkulyator/yagfaiz.html">Bədən yağ faizi</a></li>
+              <li>
+                <a class="dropdown-item" href="kalkulyator/idealkilo.html">İdeal kilo hesablaması</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="kalkulyator/proteinehtiyac.html">Günlük protein ehtiyacı</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="kalkulyator/suehtiyac.html">Günlük su ehtiyacı</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- header end -->
+
+  <!-- intro start -->
+  <section class="intro-section bg-light text-center pt-3 pb-3">
+    <div class="container">
+      <h1 class="mb-5" style="
+            background-color: rgb(71, 167, 223);
+            padding: 6px;
+            border-radius: 22px;
+          ">
+        Sən sağlam ol, Gerisi həll olar!
+      </h1>
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="intro-text collapsed" id="introText" style="text-align: left">
+            <p style="
+                  text-indent: 2em;
+                  border-bottom: 2px solid black;
+                  padding-bottom: 12px;
+                  font-weight: bold;
+                ">
+              Tibb sahəsində qabaqcıl jurnallardan
+              biri olan
+              <a target="_blank" style="text-decoration: none; color: rgb(0, 8, 156)"
+                href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(23)02750-2/fulltext">The
+                Lancetdə</a>
+              yayımlanan bir araşdırmada 2050-ci ilə qədər dünya əhalisinin
+              51%-ə yaxınının artıq çəkidən əziyyət çəkəcəyi proqnozlaşdırılır
+              .Bu dəhşətli bir rəqəmdir.Gördüyünüz hər 2 nəfərdən birinin
+              obez olduğunu düşünün.Bu hətta siz belə ola bilərsiniz və biz də
+              bunu istəmirik.
+              Dünya sürətlə inkişaf edir — bununla birgə
+              baxırsan,yediyimiz şeylər də sürətlə "kökəlir" və get-gedə daha
+              da sağlıqsız hala gəlir! Piylənmənin və qidaya bağlı
+              xəstəliklərin get-gedə artdığı bu dövrdə sağlam qalmaq artıq bir
+              seçim deyil, ehtiyacdır.SağlamSən olaraq istəyirik ki, sağlam olmaqda və
+              sağlam qalmaqda sənə kömək edək.Burada sən:
+            </p>
+            <ul class="list-unstyled text-start">
+              <li>🌿 1- Sağlam və güclü olmağın yollarını;</li>
+              <li>🌿 2- Hədəflər qoymaq və onlara çatma üsullarını;</li>
+              <li>🌿 3- Səni motivasiya edəcək şeyləri;</li>
+              <li>🌿 4- İnsanların həyatlarından sitatları və.s;</li>
+            </ul>
+            <p>
+              kimi şeyləri kəşf edəcəksən.Məqsəd və hədəfimiz sənə təkcə bilgi
+              vermək yox həm də ilham qaynağın olmaqdır.
+            </p>
+            <p class="fst-italic" style="text-indent: 2em">
+              Düzdü, hərəkətə keçmək və çalışmaq çətindir. Amma bilirsən ki,
+              hər dəyişiklik kiçik bir addımla başlayır. Biz də buradayıq ki,
+              o addımı atanda yanında olaq — həm faydalı məsləhətlərlə,həm də
+              bir az təbəssümlə. <span style="font-style: normal; font-size: 21px;">😊</span> Unutma biz birlikdə güclüyük!
+            </p>
+          </div>
+          <button class="btn btn-primary mt-3 d-none" id="toggleBtn">
+            Daha çox
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- intro end -->
+
+  <!-- addim1 start -->
+  <section class="addim1 pt-5 pb-5">
+    <div class="container">
+      <h1 id="addim1-head" class="text-start mb-5" style="border-bottom: 2px solid rgb(155, 4, 4)">
+        Biz nə
+        <span style="
+              color: rgb(11, 0, 172);
+              font-weight: bold;
+              text-transform: uppercase;
+            ">İstəyİrİk?</span>
+      </h1>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center" style="border-radius: 20px; background-color: antiquewhite">
+            <a href="neisteyiriksection/fitgorunmek.html">
+              <img src="images/foto2.png" class="card-img-top hover-scale" alt="girisboximg1"
+                style="background-color: rgb(80, 62, 96)" />
+            </a>
+            <div class="card-body d-flex flex-column justify-content-end">
+              <h5 class="card-title">Fit görünmək</h5>
+              <p class="card-text" style="text-indent: 2em; text-align: star; font-size: 14px">
+                İnsan sosial varlıq olduğu üçün öz görünüşünün gözəl və
+                estetik olmasını istəyir və bu normal bir haldır.Amma bədənin
+                ehtiyat enerji yığma mexanizmi bu hədəfə çatmağımıza imkan
+                vermir.Biz də <i style="font-size: 22px; color: blue;"> .....</i>
+              </p>
+              <a href="neisteyiriksection/fitgorunmek.html" class="btn btn-outline-success hover-scale"
+                style="border-radius: 30px">Ardını oxu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center" style="background-color: antiquewhite; border-radius: 20px">
+            <a href="neisteyiriksection/saglamqalmaq.html">
+              <img src="images/saglamadam.png" class="card-img-top hover-scale" alt="girisboximg2"
+                style="background-color: rgb(248, 183, 103)" />
+            </a>
+            <div class="card-body d-flex flex-column justify-content-end">
+              <h5 class="card-title">Sağlam qalmaq</h5>
+              <p class="card-text" style="text-indent: 2em; text-align: start; font-size: 14px; line-height: 22px;">
+                Sağlamlıq insanın sahib olduğu ən böyük nemətlərdəndir.Ona görə onu itirəndə həyat keyfiyyətimiz aşağı
+                düşür və özümüzü pis hiss edirik.Buna görə də sağlam qalmaq üçün bu əsas müddəaları bilməliyik <i
+                  style="font-size: 22px; color: blue;"> .....</i>
+              </p>
+              <a href="neisteyiriksection/saglamqalmaq.html" class="btn btn-outline-success hover-scale"
+                style="border-radius: 40px">Ardını oxu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center" style="border-radius: 20px; background-color: antiquewhite">
+            <a href="neisteyiriksection/gucluolmaq.html">
+              <img src="images/foto3.png" class="card-img-top hover-scale" alt="girisboximg3"
+                style="background-color: beige" />
+            </a>
+            <div class="card-body d-flex flex-column justify-content-end">
+              <h5 class="card-title">Güclü olmaq</h5>
+              <p class="card-text" style="text-indent: 2em; text-align: start; font-size: 14px;line-height: 21px; ">
+                Bir çoxumuz istər fiziki istər mental istərsə də maddi cəhətdən güclü olmaq istəyirik çünki əks təqdirdə
+                insanlar tərəfindən qəbul görməyəcimizi düşünürük.Fiziki cəhətdən güclü olmağın sizə həm görüntü həm də
+                fiziki iş cəhətdən fayda verdiyini deyə bilərik.Siz də <i style="font-size: 22px; color: blue;">
+                  .....</i>
+              </p>
+              <a href="neisteyiriksection/gucluolmaq.html" class="btn btn-outline-success hover-scale"
+                style="border-radius: 40px">Ardını oxu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- addim1 end -->
+
+  <!-- saglamol section start -->
+  <section class="saglamol pt-5 pb-5" id="saglamolsection">
+    <div class="container">
+      <h2 style="border-bottom: 2px solid black">
+        Necə sağlam <span>OLA BİLƏRİK?</span>
+      </h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100 text-center" style="background-color: burlywood; border-radius: 40px">
+            <a href="/SağlamSən Websayt/saglamliq/saglamqal.html">
+              <img src="images/saglamqal.png" class="card-img-top hover-scale" alt="saglamimg1" /></a>
+            <div class="card-body d-flex flex-column justify-content-end">
+              <h5 class="card-title">Sağlamlığı qorumağın başlıca yolları</h5>
+              <p class="card-text" style="text-indent: 2em; text-align: start; font-size: 14px;line-height: 21px;">
+                İlk öncə dostu düşməni tanımaq lazımdır.Bəzi şeylər var ki dostdur amma bir çoxumuz onları
+                sevmir.Bəziləri də düşməndir amma əksəriyyət onları çox <i style="font-size: 22px; color: red;">
+                  .....</i>
+              </p>
+              <a href="/SağlamSən Websayt/saglamliq/saglamqal.html" style="width: 144px; border-radius: 20px"
+                class="btn btn-primary hover-scale">Daha çox</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100 text-center" style="background-color: burlywood; border-radius: 40px">
+            <a href="/SağlamSən Websayt/saglamliq/xestelikprofilaktika.html">
+              <img src="images/antixestelik.png" class="card-img-top hover-scale" alt="saglamimg1"
+                style="background-color: black" />
+            </a>
+            <div class="card-body d-flex flex-column justify-content-end">
+              <h5 class="card-title">
+                Bunları edərək xəstəliklərdən özünü qoru
+              </h5>
+              <p class="card-text" style="text-indent: 2em; text-align: start; font-size: 14px; line-height: 23px;">
+                Xəstəliklərin başlıca səbəbləri var.Əgər biz onlara qarşı tədbir görsək çox vaxt bunlara tutulma
+                riskimiz azalır.Təbiiki sağlamlığın qarantiyası yoxdur və biz tədbir görsək də səhhətimizdə problem çıxa
+                bilər.Amma ən azından tədbir görərək bu problemləri minumuma endirsək bizim üçün yaxşı olar <i
+                  style="font-size: 22px; color: red;"> .....</i>
+              </p>
+              <a href="/SağlamSən Websayt/saglamliq/xestelikprofilaktika.html" style="width: 144px; border-radius: 20px"
+                class="btn btn-primary hover-scale">Daha çox</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card h-100 text-center" style="background-color: burlywood; border-radius: 40px">
+            <a href="/SağlamSən Websayt/saglamliq/immunguclen.html">
+              <img src="images/immunitet.png" class="card-img-top hover-scale" alt="saglamimg1" /></a>
+            <div class="card-body d-flex flex-column justify-content-end">
+              <h5 class="card-title">İmmunitetin zəifdir?Gəl düzəldək</h5>
+              <p class="card-text" style="text-indent: 2em; text-align: start; font-size: 14px; line-height: 22px;">
+                İmmunitetin zəifdi və sən hələ də tədbir görmürsən?Elə isə bunu oxuduqdan sonra lazımi bilgini əldə
+                etdiyin üçün hərəkətə keçə bilərsən.İmmunitet<i style="font-size: 22px; color: red;"> .....</i>
+              </p>
+              <a href="/SağlamSən Websayt/saglamliq/immunguclen.html" style="width: 144px; border-radius: 20px"
+                class="btn btn-primary hover-scale">Daha çox</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- saglamol section end -->
+
+  <!-- idman section start -->
+  <section class="idman pt-5 pb-5" id="idman">
+    <div class="container">
+      <h1 id="idman" style="border-bottom: 2px solid black; font-size: 44px;">
+        İdman <span style="color: rgb(6, 135, 92)">ET</span>
+      </h1>
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100 text-center" style="border-radius: 30px; border: 2px solid black;">
+            <img src="images/fight.png" class="card-img-top hover-scale" alt="idman1"
+              style="border-top-left-radius: 30px; border-top-right-radius: 30px;" />
+            <div class="card-body d-flex flex-column justify-content-end">
+              <h5 class="card-title">Döyüş idmanları</h5>
+              <p class="card-text" style="text-indent: 2em; font-size: 14px;text-align: start; ">
+                Sizcə döyüş idmanlarının məqsədi nədir? Kimisə döymək yoxsa özünü göstərmək?Əsasında döyüş idmanların
+                məqsədi
+                insanın zehnini və bədənini tərbiyə edərək güclü zehin və güclü bədən inşa etməkdir.Fərqli növləri və
+                stilləri var buna görə də ehtiyacımıza görə birini seçərək başlaya bilərik.Əgər siz özünü müdafiə <i
+                  style="font-size: 16px;">.......⬇️</i>
+              </p>
+              <a href="#" class="btn btn-primary" style="border-radius: 40px; width: 120px;">Ardını oxu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100 text-center" style="border-radius: 30px; border: 2px solid black;">
+            <img src="images/powertrain.jpg" class="card-img-top hover-scale" alt="idman2"
+              style="border-top-left-radius: 30px; border-top-right-radius: 30px;" />
+            <div class="card-body d-flex flex-column justify-content-end">
+              <h5 class="card-title">Güc Məşqləri</h5>
+              <p class="card-text" style="text-indent: 2em; ">
+                Güc məşqlərinin məqsədi əzələləri mərhələləli şəkildə yüksək ağırlıqlara məruz qoyaraq onların gücünü və
+                dayanıqlılığını artırmaqdır. <i style="font-size: 16px;">.......⬇️</i>
+              </p>
+              <a href="#" class="btn btn-primary" style="border-radius: 40px; width: 120px;">Ardını oxu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100 text-center" style="border-radius: 30px; border: 2px solid black;">
+            <img src="images/musclebuilding.jpg" class="card-img-top hover-scale" alt="idman3"
+              style="border-top-left-radius: 30px; border-top-right-radius: 30px;" />
+            <div class="card-body d-flex flex-column justify-content-end">
+              <h5 class="card-title">Əzələ yığmaq</h5>
+              <p class="card-text" style="text-indent: 2em; ">
+                Əzələ yığmaq bizim həm gücümüzü artırır həm də bizə estetik görüntü verir.Əzələ inkişafının əsası əzələ hipertrofiyasıdır.<i style="font-size: 16px;">.......⬇️</i>
+              </p>
+              <a href="#" class="btn btn-primary" style="border-radius: 40px; width: 120px;">Ardını oxu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100 text-center" style="border-radius: 30px; border: 2px solid black;">
+            <img src="images/conditiontraining.jpg" class="card-img-top hover-scale" alt="idman4"
+              style="border-top-left-radius: 30px; border-top-right-radius: 30px;" />
+            <div class="card-body d-flex flex-column justify-content-end">
+              <h5 class="card-title">Kondisiya məşqləri</h5>
+              <p class="card-text" style="text-indent: 2em; ">
+                Qaçanda nəfəs nəfəsə qalırsan?3 addım pilləkən çıxan kimi haldan düşürsən?On da sənə kondisiya məşqləri etməyi şiddətlə tövsiyə edirəm<i style="font-size: 16px;">.......⬇️</i>
+              </p>
+              <a href="#" class="btn btn-primary" style="border-radius: 40px; width: 120px;">Ardını oxu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- idman section end -->
+
+  <!-- footer start -->
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <h2 class="mb-3">SağlamSən</h2>
+      <div class="mb-3">
+        <a href="#" style="background: none; font-size: 26px; border-radius: 40px" class="text-light mx-2"><i
+            class="bi bi-youtube"></i></a>
+        <a href="#" style="background: none; font-size: 26px; border-radius: 40px" class="text-light mx-2"><i
+            class="bi bi-instagram"></i></a>
+        <a href="#" style="background: none; font-size: 26px; border-radius: 40px" class="text-light mx-2"><i
+            class="bi bi-facebook"></i></a>
+        <a href="#" style="background: none; font-size: 26px; border-radius: 40px" class="text-light mx-2"><i
+            class="bi bi-twitter"></i></a>
+        <a href="#" style="background: none; font-size: 26px; border-radius: 40px" class="text-light mx-2"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="#" style="background: none; font-size: 26px; border-radius: 40px" class="text-light mx-2"><i
+            class="bi bi-pinterest"></i></a>
+      </div>
+      <nav class="d-flex justify-content-center flex-wrap gap-3">
+        <a style="background-color: brown; border-radius: 24px; padding: 4px 15px"
+          class="text-light text-decoration-none hover-scale" href="index.html">Əsas Səhifə</a>
+        <a style="background-color: brown; border-radius: 24px; padding: 4px 15px"
+          class="text-light text-decoration-none hover-scale" href="neisteyiriksection/saglamqalmaq.html">SağlamOL</a>
+        <a style="background-color: brown; border-radius: 24px; padding: 4px 15px"
+          class="text-light text-decoration-none hover-scale" href="neisteyiriksection/gucluolmaq.html">İdman</a>
+        <a style="background-color: brown; border-radius: 24px; padding: 4px 15px"
+          class="text-light text-decoration-none hover-scale" href="kalkulyator/kalkulyatorlar.html">Kalkulyatorlar</a>
+        <a style="background-color: brown; border-radius: 24px; padding: 4px 15px"
+          class="text-light text-decoration-none hover-scale" href="neisteyiriksection/fitgorunmek.html">Arıqla</a>
+
+      </nav>
+    </div>
+    <div style="text-transform: capitalize">
+      © 2025 SağlamSən. Bütün hüquqlar qorunur.
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
