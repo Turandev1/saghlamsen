@@ -113,13 +113,16 @@
                                 SağlamOL
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="
-                    border-radius: 24px;
-                    background-color: bisque;
-                    box-shadow: 0px 0px 4px 2px black;
-                  ">
-                                <li><a class="dropdown-item" href="immunguclen.html">Güclü İmmunitet</a></li>
-                                <li><a class="dropdown-item" href="saglamqal.html">Sağlam Qalmaq</a></li>
-                                <li><a class="dropdown-item" href="xestelikprofilaktika.html">Xəstəliklərə
+                            border-radius: 24px;
+                            background-color: bisque;
+                            box-shadow: 0px 0px 4px 2px black;
+                          ">
+                                <li><a class="dropdown-item" href="/SağlamYol Websayt/saglamliq/immunguclen.html">Güclü
+                                        İmmunitet</a></li>
+                                <li><a class="dropdown-item" href="/SağlamYol Websayt/saglamliq/saglamqal.html">Sağlam
+                                        Qalmaq</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/SağlamYol Websayt/saglamliq/xestelikprofilaktika.html">Xəstəliklərə
                                         qarşı tədbirlər</a>
                                 </li>
 
@@ -215,8 +218,9 @@
         <!-- basliq -->
         <div class="container">
             <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
+                <div class="col">
+                    <h2 class="text-center mt-5">Kalori ehtiyacınızı hesablayın&Günlük kalori ehtiyacı hesablayıcı</h2>
+                </div>
             </div>
         </div>
 
@@ -226,53 +230,66 @@
 
 
         <!-- kalori ehtiyaci hesablayici -->
-        <div class="container mt-5 mb-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
-                    <div class="card p-4 m-5"
-                        style="border-radius: 22px; border: 1.5px solid black; background-color: beige;">
-                        <h2 class="text-center mb-4">Günlük kalori ehtiyacı</h2>
-                        <form id="calorieform">
-                            <div class="mb-3">
-                                <label class="form-label">Yaş</label>
-                                <input style="border: 1px solid black;" type="number" class="form-control" id="age"
-                                    required>
+        <div class="container mt-3 mb-5">
+            <div class="row justify-content-around">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card p-3 my-3 col-lg-8 "
+                                style="border-radius: 22px; border: 1.5px solid black; background-color: beige;">
+                                <form id="calorieform">
+                                    <div class="mb-3">
+                                        <label class="form-label">Yaş</label>
+                                        <input style="border: 1px solid black;" type="number" class="form-control"
+                                            id="age" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Boy(cm)</label>
+                                        <input style="border: 1px solid #000000;" type="number" class="form-control"
+                                            id="height" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Kilo(kq)</label>
+                                        <input style="border: 1px solid black;" type="number" class="form-control"
+                                            id="weight" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Cins</label>
+                                        <select style="border: 1px solid black;" class="form-select" id="gender"
+                                            required>
+                                            <option value="male">Kişi</option>
+                                            <option value="female">Qadın</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Fiziki aktivlik</label>
+                                        <select style="border: 1px solid black;" class="form-select" id="activity"
+                                            required>
+                                            <option value="1.2">Hərəkətsiz iş və həyat</option>
+                                            <option value="1.375">Hərəkətsiz iş və həftədə 1-2 dəfə məşq</option>
+                                            <option value="1.55">Orta aktiv,həftədə 2-3 dəfə məşq</option>
+                                            <option value="1.725">Çox aktiv,həftədə 4-5 dəfə məşq</option>
+                                            <option value="1.9">Yüksək hərəkətli iş və ya həftədə 5-7 dəfə ağır məşq
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100 hover-scale">Hesabla</button>
+                                </form>
+                                <div id="resultbmr" class="alert alert-success mt-4 d-none"></div>
+                                <div id="result" class="alert alert-success mt-4 d-none"></div>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Cins</label>
-                                <select style="border: 1px solid black;" class="form-select" id="gender" required>
-                                    <option value="male">Kişi</option>
-                                    <option value="female">Qadın</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Boy(cm)</label>
-                                <input style="border: 1px solid #000000;" type="number" class="form-control" id="height"
-                                    required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Kilo(kq)</label>
-                                <input style="border: 1px solid black;" type="number" class="form-control" id="weight"
-                                    required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Fiziki aktivlik</label>
-                                <select style="border: 1px solid black;" class="form-select" id="activity" required>
-                                    <option value="1.2">Hərəkətsiz iş və həyat</option>
-                                    <option value="1.375">Hərəkətsiz iş və həftədə 1-2 dəfə məşq</option>
-                                    <option value="1.55">Orta aktiv,həftədə 2-3 dəfə məşq</option>
-                                    <option value="1.725">Çox aktiv,həftədə 4-5 dəfə məşq</option>
-                                    <option value="1.9">Yüksək hərəkətli iş və ya həftədə 5-7 dəfə ağır məşq </option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100 hover-scale">Hesabla</button>
-                        </form>
-                        <div id="resultbmr" class="alert alert-success mt-4 d-none"></div>
-                        <div id="result" class="alert alert-success mt-4 d-none"></div>
+                        </div>
+                        <!-- <div class="col-md-6 d-flex align-items-start">
+                            <h2 class="text-center">Kalori ehtiyacı nədir?</h2>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+  
 
 
 

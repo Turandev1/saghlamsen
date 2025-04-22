@@ -60,7 +60,7 @@
         }
 
 
-        
+
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -73,7 +73,6 @@
                 transform: translateY(0);
             }
         }
-    
     </style>
 
     </style>
@@ -112,17 +111,17 @@
                                 SağlamOL
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="
-                    border-radius: 24px;
-                    background-color: bisque;
-                    box-shadow: 0px 0px 4px 2px black;
-                  ">
-                                <li><a class="dropdown-item" href="immunguclen.html">Güclü İmmunitet</a></li>
-                                <li><a class="dropdown-item" href="saglamqal.html">Sağlam Qalmaq</a></li>
-                                <li><a class="dropdown-item" href="xestelikprofilaktika.html">Xəstəliklərə
-                                        qarşı tədbirlər</a>
-                                </li>
-
-                            </ul>
+                            border-radius: 24px;
+                            background-color: bisque;
+                            box-shadow: 0px 0px 4px 2px black;
+                          ">
+                                        <li><a class="dropdown-item" href="/SağlamYol Websayt/saglamliq/immunguclen.html">Güclü İmmunitet</a></li>
+                                        <li><a class="dropdown-item" href="/SağlamYol Websayt/saglamliq/saglamqal.html">Sağlam Qalmaq</a></li>
+                                        <li><a class="dropdown-item" href="/SağlamYol Websayt/saglamliq/xestelikprofilaktika.html">Xəstəliklərə
+                                                qarşı tədbirlər</a>
+                                        </li>
+        
+                                    </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
@@ -233,22 +232,27 @@
 
                             <div class="mb-3">
                                 <label for="age" class="form-label">Boy(cm)</label>
-                                <input required type="number" min="1" style="border: 1px solid black;" class="form-control" id="height">
+                                <input required type="number" min="1" style="border: 1px solid black;"
+                                    class="form-control" id="height">
                             </div>
                             <div class="mb-3">
                                 <label for="neck" class="form-label">Boyun çevrəsi(cm)</label>
-                                <input required type="number" min="1" class="form-control" id="neck" style="border: 1px solid black;">
+                                <input required type="number" min="1" class="form-control" id="neck"
+                                    style="border: 1px solid black;">
                             </div>
                             <div class="mb-3">
                                 <label for="waist" class="form-label">Bel çevrəsi(cm)</label>
-                                <input required type="number" min="1" class="form-control" id="waist" style="border: 1px solid black;">
+                                <input required type="number" min="1" class="form-control" id="waist"
+                                    style="border: 1px solid black;">
                             </div>
                             <div class="mb-3" id="hipField" style="display:none;">
                                 <label for="hip" class="form-label">Oma Çevresi (cm)</label>
-                                <input type="number" min="1" class="form-control" id="hip" style="border: 1px solid black;" required>
+                                <input type="number" min="1" class="form-control" id="hip"
+                                    style="border: 1px solid black;" required>
                             </div>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-success hover-scale m-3" onclick="calculateBodyFat()">Hesabla</button>
+                                <button class="btn btn-success hover-scale m-3"
+                                    onclick="calculateBodyFat()">Hesabla</button>
                             </div>
                             <div class="alert alert-success mt-4 d-none" id="resultbox">
                                 <strong id="resulttext"></strong>
@@ -365,9 +369,9 @@
             resultbox.classList.remove("d-none");
             resultbox.classList.add('fade-in');
             resulttext.classList.add('fade-in');
-            document.getElementById('neck').value="";
-            document.getElementById('height').value="";
-            document.getElementById('waist').value="";
+            document.getElementById('neck').value = "";
+            document.getElementById('height').value = "";
+            document.getElementById('waist').value = "";
         }
 
 
